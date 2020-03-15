@@ -1,2 +1,25 @@
+@use 'colors';
+
 $font-family_header: 'Roboto', 'Helvetica', sans-serif;
 $font_family_text: 'Nunito', sans-serif;
+
+@mixin h1 {
+    font-family: $font-family_header;
+    font-size: 80px;
+    font-weight: bold;
+    color: colors.$color_darkblue;
+}
+
+@mixin h1_smallscreen {
+    font-family: $font-family_header;
+    font-size: 50px;
+    font-weight: bold;
+    color: colors.$color_darkblue;
+}
+
+@mixin text {
+    font-family: $font_family_text;
+    font-size: 18px;
+    color: colors.$color_darkblue;
+
+}
