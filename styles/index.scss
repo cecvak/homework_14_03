@@ -182,14 +182,14 @@ $radius: 50px;
 }
 
 .header_right {
-    // position: absolute;
+    position: absolute;
     
     // height: 100%;
     left: 600px;
-    bottom: 0;
+    // bottom: 0;
     // left: 0;
     // right: 0;
-    // top: 140px;
+    top: 140px;
     // bottom: 0;
     // bottom: -100px;
     // align-self: flex-end;
@@ -216,6 +216,7 @@ $radius: 50px;
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-top: 140px;
     // position: absolute;
     // margin-top: 50px;
 }
@@ -296,10 +297,10 @@ $radius: 50px;
     // height: 100%;
     // grid-template-columns: repeat(2, minmax(442px, 1fr));
     // grid-template-rows: repeat(2, minmax(450px, 1fr));
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     // grid-template-columns: minmax(min-content, 300px) minmax(400px, 1fr) ;
     // grid-template-columns: minmax(300px, 450px) 1fr;
-    grid-template-rows: repeat(auto-fill, minmax(400px, 1fr));
+    // grid-template-rows: repeat(auto-fill, minmax(400px, 1fr));
     // grid-template-rows: repeat(auto-fill, minmax(450px, 1fr));
     // width: 95%;
 }
@@ -486,12 +487,16 @@ $radius: 50px;
 
     .header_wrapper {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
     }
 
     .header_right {
         position: static;
+    }
+
+    .section_one {
+        margin-top: 0;
     }
 
     .button_header {
@@ -515,15 +520,15 @@ $radius: 50px;
         height: 42px;
     }
 
-    .header_wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+    // .header_wrapper {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    // }
 
-    .header_right {
-        position: static;
-    }
+    // .header_right {
+    //     position: static;
+    // }
 }
 
 
@@ -532,12 +537,23 @@ $radius: 50px;
         @include fonts.h1_smallscreen;
     }
 
+    .grid_container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
     .grid_image {
         display: none;
     }
 
     .grid_box {
         height: 300px;
+        // width: 300px;
+        // height: auto;
+        justify-content: center;
+    }
+
+    .grid_text {
+        margin: 0;
     }
 
 }
