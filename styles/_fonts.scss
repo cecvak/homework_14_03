@@ -21,12 +21,23 @@ $font_family_text: 'Nunito', sans-serif;
     font-family: $font_family_text;
     font-size: 18px;
     color: colors.$color_darkblue;
+}
 
+@mixin smalltext {
+    font-family: $font_family_text;
+    font-size: 16px;
+    color: colors.$color_blue;
 }
 
 @mixin h4 {
     font-family: $font_family_header;
     font-size: 40px;
     font-weight: bold;
+    color: colors.$color_darkblue;
+}
+
+@mixin h5 {
+    font-family: $font_family_header;
+    font-size: 24px;
     color: colors.$color_darkblue;
 }
