@@ -23,3 +23,10 @@ $font_family_text: 'Nunito', sans-serif;
     color: colors.$color_darkblue;
 
 }
+
+@mixin h4 {
+    font-family: $font_family_header;
+    font-size: 40px;
+    font-weight: bold;
+    color: colors.$color_darkblue;
+}
