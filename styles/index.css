@@ -355,6 +355,10 @@
   margin-right: 30px;
 }
 
+.image_john {
+  height: 100%;
+}
+
 .quote_text {
   max-width: 385px;
 }
@@ -412,6 +416,14 @@
     width: 144px;
     height: 42px;
   }
+
+  .quote_box {
+    max-width: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 @media screen and (max-width: 480px) {
   .header_h1 {
@@ -436,6 +448,21 @@
 
   .grid_text {
     margin: 0;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  .quote_box {
+    width: 300px;
+  }
+
+  .quote_image {
+    width: 48px;
+    height: 48px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
