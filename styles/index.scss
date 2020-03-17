@@ -492,6 +492,7 @@ $radius: 50px;
     // justify-content: center;
     // align-content: center;
     align-items: center;
+    
 }
 
 .footer_top {
@@ -513,13 +514,21 @@ $radius: 50px;
     margin-right: 30px;
 }
 
+
+.footer_logo {
+    display: flex;
+}
+
 .footer_logo_text {
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 50px;
+    margin-left: 20px;
 }
 
 .footer_row_head {
     font-weight: bold;
+    margin-bottom: 30px;
 }
 
 .social_logo {
@@ -530,6 +539,21 @@ $radius: 50px;
 .footer_middle {
     max-width: 1117px;
     width: 100%;
+    max-height: 550px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    margin-top: 50px;
+}
+
+.footer_middle_middle {
+    display: flex;
+    // align-items: baseline;
+}
+
+.footer_middle_middle_left {
+    margin-right: 50px;
 }
 
 // .footer_grid {
@@ -697,7 +721,7 @@ $radius: 50px;
         justify-content: flex-start;
     }
 
-    .button_nav {
+    .button_demo {
         align-self: flex-start;
         width: 144px;
         height: 42px;
@@ -716,6 +740,27 @@ $radius: 50px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .footer_top_right {
+        margin-top: 20px;
+    }
+
+    .button_footer_learn {
+            width: 144px;
+            height: 42px;
+    }
+    
+    .footer_middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .footer_middle_middle {
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     // .header_wrapper {
@@ -768,6 +813,7 @@ $radius: 50px;
         margin-left: 10px;
         margin-right: 10px;
     }
+
 
 }
 
