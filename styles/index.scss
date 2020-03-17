@@ -17,7 +17,7 @@ $radius: 50px;
 
 .button {
     @include rounded;
-    border: none;
+    // border: none; //remeber to change this!!
     font-family: fonts.$font_family_text;
 }
 
@@ -40,14 +40,27 @@ $radius: 50px;
 .button_learn {
     width: 170px;
     height: 60px;
-    background-color: colors.$color_purple;
     color: #ffffff;
     font-weight: bold;
     font-size: 18px;
 }
 
+
+.button_header {
+    background-color: colors.$color_purple;
+}
+
 .button_learn:hover {
     background-color: colors.$color_darkblue;
+}
+
+.button_footer_learn {
+    background-color: colors.$color_pink;
+}
+
+.button_footer_demo:hover {
+    background-color: colors.$color_darkblue;
+    color: #ffffff;
 }
 
 * {
@@ -462,6 +475,171 @@ $radius: 50px;
     max-width: 385px;
 }
 
+.footer_wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer_content {
+    max-width: 1117px;
+    width: 100%;
+    // height: auto;
+    // max-height: 709px;
+    // height: 100%;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-content: center;
+    align-items: center;
+}
+
+.footer_top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 350px;
+    // max-height: 400px;
+    // height: 100%;
+}
+
+.footer_header {
+        @include fonts.h5;
+        margin-bottom: 20px;
+}
+
+.button_footer_learn {
+    margin-right: 30px;
+}
+
+.footer_logo_text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer_row_head {
+    font-weight: bold;
+}
+
+.social_logo {
+    width: 50px;
+    height: 50px;
+}
+
+.footer_middle {
+    max-width: 1117px;
+    width: 100%;
+}
+
+// .footer_grid {
+//     display: grid;
+//     grid-gap: 0;
+//     grid-template-columns: repeat(20, 1fr);
+//     grid-template-rows: repeat(20, 1fr);
+//     // max-height: 400px;
+    
+// }
+
+// .footer_grid_item_one {
+//     grid-column: 1 / 2;
+//     grid-row: 1 / 3;
+// }
+
+// .footer_grid_item_two {
+//     grid-column: 2 / 5;
+//     grid-row: 1 / 3;
+// }
+
+// .footer_grid_item_three {
+//     grid-column: 1 / 5;
+//     grid-row: 6 / 7;
+// }
+
+// .footer_grid_item_four {
+//     grid-column: 1 / 6;
+//     grid-row: 8 / 9;
+// }
+
+// .footer_grid_item_five {
+//     grid-column: 1 / 5;
+//     grid-row: 10 / 11;
+// }
+
+// .footer_grid_item_six {
+//     grid-column: 1 / 5;
+//     grid-row: 12 / 13;
+// }
+
+// // column 2, about
+// .footer_grid_item_seven {
+//     grid-column: 9 / 11;
+//     grid-row: 1 / 3;
+// }
+
+// .footer_grid_item_eight {
+//     grid-column: 9 / 11;
+//     grid-row: 5 / 6;
+// }
+
+// .footer_grid_item_nine {
+//     grid-column: 9 / 11;
+//     grid-row: 7 / 8;
+// }
+
+// .footer_grid_item_ten {
+//     grid-column: 9 / 11;
+//     grid-row: 9 / 10;
+// }
+
+// .footer_grid_item_eleven {
+//     grid-column: 9 / 11;
+//     grid-row: 11 / 12;
+// }
+
+// // column three, help
+// .footer_grid_item_twelve {
+//     grid-column: 13 / 14;
+//     grid-row: 1 / 3;
+// }
+
+// .footer_grid_item_thirteen {
+//     grid-column: 13 / 15;
+//     grid-row: 5 / 6;
+// }
+
+// .footer_grid_item_fourteen {
+//     grid-column: 13 / 15;
+//     grid-row: 7 / 8;
+// }
+
+// .footer_grid_item_fifteen {
+//     grid-column: 13 / 15;
+//     grid-row: 9 / 10;
+// }
+
+// .footer_grid_item_sixteen {
+//     grid-column: 13 / 15;
+//     grid-row: 11 / 12;
+// }
+
+// .footer_grid_item_seventeen {
+//     grid-column: 13 / 15;
+//     grid-row: 13 / 14;
+// }
+
+
+// // column four, social media
+// .footer_grid_item_eighteen {
+//     grid-column: 17 / 19;
+//     grid-row: 1 / 3;
+// }
+
+// .footer_grid_item_nineteen {
+//     grid-column: 17 / 21;
+//     grid-row: 4 / 7;
+// }
+
 
 @media screen and (max-width: 1280px) { 
 
@@ -532,6 +710,14 @@ $radius: 50px;
         padding-left: 10px;
         padding-right: 10px;
     }
+
+    .footer_top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     // .header_wrapper {
     //     display: flex;
     //     flex-direction: column;
